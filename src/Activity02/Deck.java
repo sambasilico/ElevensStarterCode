@@ -31,15 +31,16 @@ public class Deck {
 	 */
 	public Deck(String[] ranks, String[] suits, int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+                
 	}
-
 
 	/**
 	 * Determines if this deck is empty (no undealt cards).
 	 * @return true if this deck is empty, false otherwise.
 	 */
 	public boolean isEmpty() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+            /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+            return cards.size() == 0;
 	}
 
 	/**
@@ -48,6 +49,7 @@ public class Deck {
 	 */
 	public int size() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+                return size;
 	}
 
 	/**
