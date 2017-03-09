@@ -31,6 +31,13 @@ public class Deck {
 	 */
 	public Deck(String[] ranks, String[] suits, int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+                for (int i = 0; i < ranks.length; i++) {
+                    for (int j = 0; j <suits.length; j++) {
+                        Card temp = new Card(ranks[i], suits[j], values[i]);
+                        Cards.add(temp);
+                    }
+                }
+                
                 
 	}
 
@@ -44,7 +51,8 @@ public class Deck {
 	}
 
 	/**
-	 * Accesses the number of undealt cards in this deck.
+	 * Access
+         * es the number of undealt cards in this deck.
 	 * @return the number of undealt cards in this deck.
 	 */
 	public int size() {
@@ -65,8 +73,11 @@ public class Deck {
 	 * @return the card just dealt, or null if all the cards have been
 	 *         previously dealt.
 	 */
-	public Card deal() {
+	public Card deal(int c) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+                return cards.get(c);
+                size+=1;
+                
 	}
 
 	/**
